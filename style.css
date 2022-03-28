@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /*чтобы установить ширину и высоту остальных эл в процентах*/
+  width: 100%;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+.wrapper {
+  width: 1119px;
+  height: 415px;
+  font-family: "Hind Madurai", sans-serif;
+  margin: auto;
+  margin-top: 100px;
+}
+.shop {
+  display: flex;
+}
+.shop__img {
+  width: 580px;
+  height: 415px;
+  overflow: hidden;
+  margin-right: 50px;
+  background-image: url(img/mor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shop__title {
+  padding-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.shop__text {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+.shop__price {
+  padding-bottom: 30px;
+}
+.shop__cost {
+  font-weight: 500;
+  font-size: 26px;
+  padding-right: 5px;
+}
+.shop__cost-old {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.bottom {
+  background-color: #d64374;
+  padding: 15px 46px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100vh;
+  }
+  .shop {
+    display: block;
+  }
+  .shop__img {
+    margin: auto;
+  }
+  .shop__character {
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+}
