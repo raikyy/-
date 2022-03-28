@@ -33,14 +33,13 @@ h3 {
 .shop {
   display: flex;
 }
-.shop__img {
+.shop__img-wrap {
   width: 580px;
   height: 415px;
   overflow: hidden;
   margin-right: 50px;
-  background-image: url(img/mor.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center;
 }
 .shop__title {
   padding-bottom: 20px;
@@ -55,7 +54,7 @@ h3 {
   padding-bottom: 10px;
 }
 .shop__price {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .shop__cost {
   font-weight: 500;
@@ -67,24 +66,10 @@ h3 {
   font-size: 20px;
   text-decoration: line-through;
 }
-.bottom {
+.button {
   background-color: #d64374;
   padding: 15px 46px;
   color: #ffffff;
   border-radius: 5px;
-}
-@media (max-width: 480px) {
-  .wrapper {
-    width: 100vh;
-  }
-  .shop {
-    display: block;
-  }
-  .shop__img {
-    margin: auto;
-  }
-  .shop__character {
-    margin-left: 30px;
-    margin-top: 40px;
-  }
+  border: none;
 }
